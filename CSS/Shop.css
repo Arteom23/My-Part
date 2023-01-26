@@ -1,0 +1,403 @@
+/* all common css */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+/* all common css */
+/* SHOP ::part */
+.heading h1{
+    padding: 10px 0px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Signika Negative', sans-serif;
+    text-shadow: -2px 2px 2px #ca6547a7;
+}
+.choice{
+    justify-content: space-between ;
+}
+.choice button{
+    color: #000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-right: 9px;
+    border: 1px solid#000;
+    position: relative;
+    transition:border 250ms ease-in;
+    z-index: 1;
+}
+.choice button::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #FF7043;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 250ms ease-in;
+    z-index: -1;
+}
+
+.choice button:hover::before{
+    transform: scale(1);
+}
+.choice button:hover{
+    color: #fff;
+    border: 1px solid#FF7043;
+}
+.shop_product{
+    transition: 0.4s all linear;
+}
+.shop_product:hover{
+    transform: translateY(-10px);
+}   
+/* Shop Pruduct Feature */
+.shop_product_feature{
+    position: relative;
+    padding: 120px 0px;
+    background: url(../Images/Product_14_380x_crop_center.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.one{
+    position: relative;
+    padding: 120px 0px;
+    background: url(../Images/galex.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.two{
+    padding: 120px 0px;
+    background: url(../Images/keybord.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.three{
+    padding: 120px 0px;
+    background: url(../Images/Travel1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.four{
+    padding: 120px 0px;
+    background: url(../Images/Oregon1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.five{
+    padding: 120px 0px;
+    background: url(../Images/besttech1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.six{
+    padding: 120px 0px;
+    background: url(../Images/vacuum-cleaner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.seven{
+    padding: 120px 0px;
+    background: url(../Images/best-gadgets.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.New{
+    position: absolute;
+    padding: 10px 7px;
+    border-radius: 50%;
+    background: rgba(0, 128, 0, 0.704);
+    text-align: center;
+    top: 4%;
+    right: 4%;
+}
+.Upcomming{
+    padding: 07px 20px;
+    border-radius: 10px;
+    top: 4%;
+    right: 2%;
+}
+.travel{
+    padding: 10px 9px;
+    background: rgba(43, 40, 40, 0.703);
+}
+.travel h2{
+    color: #FFA000;
+
+}
+.New h2{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.Upcomming h2{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.row .col-lg-3:nth-child(4) .Off{
+    position: absolute;
+    padding: 10px 9px;
+    background: rgba(43, 40, 40, 0.703);
+    top: 4%;
+    right: 4%;
+    border-radius: 50%;
+}
+.row .col-lg-3:nth-child(4) .Off h3{
+     font-size: 14px;
+}
+.row .col-lg-3:nth-child(5) .travel{
+    position: absolute;
+    padding: 10px 9px;
+    background: rgba(43, 40, 40, 0.703);
+    top: 4%;
+    right: 4%;
+    border-radius: 50%;
+}
+.row .col-lg-3:nth-child(5) .travel h2{
+     font-size: 15px;
+}
+
+.Off{
+    position: absolute;
+    padding: 10px 8px;
+    background: rgba(43, 40, 40, 0.703);
+    top: 26%;
+    right: 4%;
+    border-radius: 50%;
+}
+.Off h3{
+    font-size: 14px;
+    color: #FFA000;
+}
+.compare{
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 7px;
+    border: 1px solid rgba(228, 204, 204, 0.778);
+    bottom: 10%;
+    right: 20%;
+    color: bisque;
+    background: rgba(228, 204, 204, 0.778);
+    cursor: pointer;
+}
+.compare:hover{
+    color: #00B8D4;
+    background:  #8D6E63;
+    border: 1px solid#8D6E63;
+ }
+.compare i{
+    transition: .4s all linear;
+    line-height: 30px;
+    font-size: 17px
+}
+.color{
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(228, 204, 204, 0.778);
+    bottom: 10%;
+    right: 07%;
+    color: bisque;
+    background: rgba(228, 204, 204, 0.778);
+    cursor: pointer;
+}
+.color:hover{
+    color: #E040FB;
+    background:  #8D6E63;
+    border: 1px solid#8D6E63;
+}
+.color i{
+    line-height: 30px;
+    font-size: 17px;
+    transition: .4s all linear;
+}
+@keyframes slideic {
+        0%  {bottom: 0; }
+        100% { bottom: 10%;; }
+}
+@keyframes slidein {
+        0%   {bottom: 0; }
+        100% { bottom: 10%; }
+}
+
+.shop_product_overlay{
+    position: absolute;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition:.5s ease ;
+}
+.shop_product:hover .shop_product_overlay {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.shop_product:hover .color{
+    animation-timing-function: ease;
+    animation-name:slideic ;
+    animation-duration:.4s;
+}
+.shop_product:hover .compare{
+    animation-timing-function: ease;
+    animation-name:slidein ;
+    animation-duration:.3s;
+}
+/* Shop Pruduct Feature */
+/* Shop Pruduct 
+Details */
+.shop_product_details h2{
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 17px;
+    padding-bottom: 9px;
+    margin-left: 5px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.shop_product_price p{
+    color: #FBC02D;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 5px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.shop_product_price span{
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    padding-left: 04px;
+}
+
+.shop_product_price span::before {
+        position: absolute;
+        content: "";
+        width:100%;
+        height: 1px;
+        top: 8px;
+        left: 4px;
+        background: #D50000;
+        transform: rotate(355deg);
+}
+.shop_product_rating{
+    margin-left: 5px;
+}
+.shop_product_rating i{
+    color: #78909C;
+    padding-top: 12px;
+    padding-bottom: 17px;
+}
+.shop_product_buy{
+    display: flex;
+    justify-content: space-between;
+}
+.shop_product_buy button{
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    border: 1.7px solid #FF7043;
+    padding: 13px 22px;
+    letter-spacing: 2px;
+    background: #FF7043;
+    transition: .4s all linear;
+    border-radius: 5px;
+}
+.REGISTER{
+    padding: 13px 50px !important;
+}
+.shop_product_buy button:hover{
+    color: #FF7043;
+    border: 1.7px solid #FF7043;
+    background:#FFF ;
+}
+.shop_product_buy i{
+    font-weight: 700;
+    font-size: 24px;
+    color: #F50057;
+    transition: .4s all linear;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.shop_product_buy i:hover{
+    border: 1.7px solid #F50057;
+    background: #F50057;
+    color:#fff;
+}
+.wishlist{
+    border: 1.7px solid #cebfb9;
+    padding-top: 12.5px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #fff;
+    border-radius: 5px;
+}
+.Load{
+    padding: 07px 1rem;
+    color: #000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300;
+    border: 1px solid#000;
+    position: relative;
+    transition:border 250ms ease-in;
+    z-index: 1;
+}
+
+
+.Load::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #FF7043;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 250ms;
+    z-index: -1;
+}
+.Load:hover::before{
+    transform: scale(1);
+}
+.Load:hover{
+    color: #FFF;
+    border: 1px solid#FF7043;
+}
+/* Shop Pruduct 
+Details */
+
+/* SHOP ::part */
